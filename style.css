@@ -1,21 +1,99 @@
+* {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
 img {
   width: 300px;
 height: auto;
 }
 
-header {
-  background-color: blueviolet;
-  padding: 0;
-  margin: 0;
+.row {
   display: flex;
   justify-content: space-between;
+  width: 95%;
   align-items: center;
-  
+  margin: auto;
 }
 
-ul {
-align-self: baseline;
-flex-grow: 1;
-list-style: none;
-text-transform: capitalize;
+section {
+  padding: 50px 0;
+}
+
+/*Hero Section*/
+
+header {
+height: 100vh;
+background-color: rgb(219, 34, 188);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+color: whitesmoke;
+}
+
+.logo h1{
+margin: 0;
+}
+
+nav {
+  padding: 1% 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+display: inline-block;
+margin-left: 1em;
+}
+
+nav ul li a:hover {
+  color: blue;
+  transition: .5s ease-in-out;
+}
+
+.header-content {
+  width: 50%;
+  position: relative;
+  top: 16%;
+  left: 5%;
+  color: whitesmoke;
+  font-weight: bolder;
+}
+
+button {
+  background-color: whitesmoke;
+  color: purple;
+  font-weight: bold;
+  width: 10%;
+  border-radius: 3px;
+}
+
+header .header-content img {
+  align-self: flex-end;
+}
+
+/*What I can do for you section*/
+
+.about {
+  background-color: silver;
+}
+.about h2 {
+  text-align: center;
+}
+
+.about-left, .about-middle-left, .about-middle-right, .about-right {
+  flex-basis: 10%;
+padding: 2%;
 }
