@@ -31,16 +31,18 @@ section {
 /*Hero Section*/
 
 header {
-height: 100vh;
-background-color: rgb(219, 34, 188);
+height: 80vh;
+background-color: purple;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 color: whitesmoke;
 }
 
-.logo h1{
+.logo img {
 margin: 0;
+width: 100px;
+height: auto;
 }
 
 nav {
@@ -66,22 +68,24 @@ nav ul li a:hover {
 .header-content {
   width: 50%;
   position: relative;
-  top: 16%;
+  top: 6%;
   left: 5%;
   color: whitesmoke;
-  font-weight: bolder;
+  display: flex;
+  justify-content: flex-start;
+  align-content:space-between;
 }
 
-button {
+.header-left, .header-right {
+padding: 2%;
+}
+
+header button {
   background-color: whitesmoke;
   color: purple;
   font-weight: bold;
-  width: 10%;
+  width: 20%;
   border-radius: 3px;
-}
-
-header .header-content img {
-  align-self: flex-end;
 }
 
 /*What I can do for you section*/
@@ -96,4 +100,42 @@ header .header-content img {
 .about-left, .about-middle-left, .about-middle-right, .about-right {
   flex-basis: 10%;
 padding: 2%;
+}
+
+/*Quote section*/
+
+.quote {
+  justify-content: center;
+  padding: 5% 30%;
+  background-color: rgb(146, 145, 145);
+  color: black;
+}
+
+figcaption {
+  text-align: right;
+
+}
+
+/*Call to action section*/
+.action {
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  background-color: silver;
+  margin: auto;
+  padding: 5% 20%;
+}
+
+.action button {
+  align-self: flex-end;
+  width: 20%;
+  border-radius: 3px;
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+background-color: purple;
+color: whitesmoke;
+padding: 1% 0;
 }
