@@ -11,11 +11,6 @@ a {
   font-weight: bold;
 }
 
-img {
-  width: 300px;
-height: auto;
-}
-
 .row {
   display: flex;
   justify-content: space-between;
@@ -66,18 +61,29 @@ nav ul li a:hover {
 }
 
 .header-content {
-  width: 50%;
+  width: 80%;
   position: relative;
-  top: 6%;
-  left: 5%;
+  margin: 0 auto;
   color: whitesmoke;
   display: flex;
-  justify-content: flex-start;
-  align-content:space-between;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5%;
 }
 
 .header-left, .header-right {
-padding: 2%;
+ width: 50%;
+}
+
+.header-left {
+  flex: 3, 0, auto;
+}
+
+.header-right img {
+  width: 450px;
+  height: auto;
+  flex-shrink: 2;
+  align-self: flex-end;
 }
 
 header button {
@@ -86,29 +92,42 @@ header button {
   font-weight: bold;
   width: 20%;
   border-radius: 3px;
+  margin: 2% 0;
 }
 
 /*What I can do for you section*/
 
 .about {
   background-color: silver;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
+
 .about h2 {
   text-align: center;
 }
 
 .about-left, .about-middle-left, .about-middle-right, .about-right {
-  flex-basis: 10%;
-padding: 2%;
+  flex-basis: 2%;
+  padding: 2%;
+  align-self: baseline;
 }
 
+.about img {
+  width: 300px;
+  height: 300px;
+
+}
 /*Quote section*/
 
 .quote {
   justify-content: center;
   padding: 5% 30%;
-  background-color: rgb(146, 145, 145);
-  color: black;
+  background-color: purple;
+  color: whitesmoke;
+  font-style: italic;
 }
 
 figcaption {
@@ -119,11 +138,12 @@ figcaption {
 /*Call to action section*/
 .action {
   display: flex;
-  justify-content: flex-start;
-  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
   background-color: silver;
-  margin: auto;
-  padding: 5% 20%;
+  margin: 5rem 20rem;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .action button {
