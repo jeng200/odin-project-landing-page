@@ -1,5 +1,7 @@
 # Odin-Project-Landing-Page
-This is a landing page project I developed for The Odin Project. Skills I utilized are CSS styling and responsive web design using Flexbox.
+This is a landing page project I developed for The Odin Project. Skills I utilized are HTML, CSS styling, and responsive web design using Flexbox.
+
+Live page is here: https://jeng200.github.io/odin-project-landing-page/
 
 Photo credits: 
 1. puzzle-share-put-together-game-977236
